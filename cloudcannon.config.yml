@@ -1,6 +1,4 @@
 source: /src/
-paths:
-  uploads: /assets/images
 collections_config:
   pages:
     path: /
