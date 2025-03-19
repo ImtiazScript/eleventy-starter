@@ -1,5 +1,10 @@
 source: /src/
-collections_config: {}
+paths:
+  uploads: /assets/images
+collections_config:
+  pages:
+    path: /
+    url: /[full_slug]
 paths:
   static: ''
   uploads: uploads
