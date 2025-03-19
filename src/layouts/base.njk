@@ -4,59 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>{{ title }} </title>
-    <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com">
+    <title>{{ title }}</title>
     <meta name="description" content="{{ description }}">
     <meta name="keywords" content="{{ keywords }}">
-    <meta name="google-site-verification" content="">
-    <link href="assets/styles/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <script src="assets/js/50b273893e.js"></script>
-    <link rel="stylesheet" href="assets/styles/main.css?v=1623096610">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="apple-touch-icon" href="index-1.html" sizes="180x180">
-    <link rel="icon" href="index-2.html" sizes="32x32" type="image/png">
-    <link rel="icon" href="index-3.html" sizes="16x16" type="image/png">
-    <link rel="manifest" href="site.webmanifest">
-    <link rel="mask-icon" href="index-4.html" color="#293240">
-    <meta name="apple-mobile-web-app-title" content="Dunbar Beddingfield">
-    <meta name="application-name" content="Dunbar Beddingfield">
-    <meta name="msapplication-TileColor" content="#293240">
-    <meta name="theme-color" content="#293240">
-    <meta property="og:url" content="https://dunbarbeddingfield.com/">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="{{ title }}">
-    <meta property="og:description" content="{{ description }}">
-    <meta property="og:image" content="https://dunbarbeddingfield.com/assets/img/og-image.jpg">
-    <script src="assets/js/alpine.min.js" defer="defer"></script>
-    <link rel="preload" as="image" href="assets/images/hero-background-828x508.webp" type="image/webp"
-    media="(min-width: 768px)" />
-    <link rel="preload" as="image" href="assets/images/hero-background-mobile-450x768.webp" type="image/webp"
-    media="(max-width: 767px)" />
-    <style>
-        .bg {
-            background-image: url('assets/images/background-desktop-2000x1328.webp');
-        }
-        @media (max-width: 768px) {
-            .bg {
-                background-image: url('assets/images/mobile-view.webp');
-            }
-        }
-    </style>
+    {% block head %}{% endblock %}
 </head>
 
 <body x-data="{ navIsOpen: false }" :class="{ 'nav-is-open': navIsOpen }" class="bg-gray-900 index">
-    {% include "components/header-gray.njk" %}
-    <main id="content" rel="main">
-        {{ content | safe }}
-    </main>
-    <div class="bg"></div>
-    {% include "components/footer.njk" %}
 
-    <script src="assets/js/loadComponents.js"></script>
-    <script src="assets/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/ajax/libs/gsap/3.4.0/gsap.min.js"></script>
-    <script src="assets/ajax/libs/gsap/3.4.0/ScrollToPlugin.min.js"></script>
-    <script src="assets/js/recaptcha/api.js" async="" defer="defer"></script>
-    <script src="assets/js/core.js?v=1623096610"></script>
+    {% block content %}
+        {{ content | safe }}
+    {% endblock %}
+    
+    {% block scripts %}{% endblock %}
 </body>
 </html>
