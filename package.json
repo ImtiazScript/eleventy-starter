@@ -1,15 +1,15 @@
 {
-  "name": "eleventy-starter",
+  "name": "dunbar-beddingfield",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "Dunbar Beddingfield website built with Eleventy",
+  "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "dev": "eleventy --serve"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": ["eleventy", "11ty", "static site"],
   "dependencies": {
-    "@11ty/eleventy": "^3.0.0"
+    "@11ty/eleventy": "^1.0.0"
   }
 }

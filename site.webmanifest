@@ -1,0 +1,19 @@
+{
+  "name": "Dunbar Beddingfield",
+  "short_name": "Dunbar Beddingfield",
+  "icons": [
+    {
+      "src": "/assets/images/favicon-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/images/favicon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#293240",
+  "background_color": "#293240",
+  "display": "standalone"
+}

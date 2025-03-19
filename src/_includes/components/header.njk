@@ -1,0 +1,22 @@
+<header class="site-header">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+        <a href="/" class="logo">
+            <img src="assets/images/logo.svg" alt="Dunbar Beddingfield" class="h-10">
+        </a>
+        <nav class="main-nav">
+            <ul class="flex space-x-6">
+                <li><a href="/risk-management" class="text-white hover:text-gray-300">Risk Management</a></li>
+                <li><a href="/safety-consulting" class="text-white hover:text-gray-300">Safety Consulting</a></li>
+                <li><a href="/property-casualty" class="text-white hover:text-gray-300">Property and Casualty</a></li>
+                <li><a href="/business-development" class="text-white hover:text-gray-300">Business Development</a></li>
+                <li><a href="/contact" class="text-white hover:text-gray-300">Contact</a></li>
+            </ul>
+        </nav>
+        <button @click="navIsOpen = !navIsOpen" class="md:hidden">
+            <span class="sr-only">Menu</span>
+            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+        </button>
+    </div>
+</header>
