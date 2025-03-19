@@ -10,12 +10,12 @@
     {% block head %}{% endblock %}
 </head>
 
-<body x-data="{ navIsOpen: false }" :class="{ 'nav-is-open': navIsOpen }" class="bg-gray-900 index">
-
+<body x-data="{{ bodyXData}}" :class="{{ bodyBindClass }}" class="{{ bodyClass }}">
+    
     {% block content %}
         {{ content | safe }}
     {% endblock %}
-    
+
     {% block scripts %}{% endblock %}
 </body>
 </html>
